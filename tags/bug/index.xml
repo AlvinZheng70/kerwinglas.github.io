@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Terminal</title>
-    <link>https://kerwinglas.github.io/posts/</link>
-    <description>Recent content in Posts on Terminal</description>
+    <title>bug on Terminal</title>
+    <link>https://kerwinglas.github.io/tags/bug/</link>
+    <description>Recent content in bug on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Dec 2022 22:03:29 +0800</lastBuildDate><atom:link href="https://kerwinglas.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Dec 2022 22:03:29 +0800</lastBuildDate><atom:link href="https://kerwinglas.github.io/tags/bug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>微信小程序开发 | 数据绑定无法实现</title>
       <link>https://kerwinglas.github.io/posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0/</link>
@@ -36,43 +36,6 @@ reference 微信开发工具ts和js文件冲突</description>
 &lt;p&gt;删除文件&lt;code&gt;index.ts&lt;/code&gt;，或使用ts文件实现对应声明。&lt;/p&gt;
 &lt;h2 id=&#34;reference&#34;&gt;reference&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_45807026/article/details/122423651#:~:text=%E5%A6%82%E6%9E%9C%E5%88%9B%E5%BB%BA%E4%BA%86%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E4%BA%86typescript%E6%9D%A5%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B9%E7%9B%AE%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9C%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%96%B0%E5%BB%BA%E4%BA%86js%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%9D%EF%BC%8C%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%BC%9A%E5%85%88%E8%AF%BB%E5%8F%96ts%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%86%85%E5%AE%B9%EF%BC%8C%E9%99%A4%E9%9D%9Ets%E6%96%87%E4%BB%B6%E4%B8%AD%E6%B2%A1%E6%9C%89%E5%86%85%E5%AE%B9%E6%89%8D%E4%BC%9A%E5%8E%BB%E8%AF%BB%E5%8F%96js%E6%96%87%E4%BB%B6%E3%80%82%20%E6%89%80%E4%BB%A5%E5%8F%AA%E8%A6%81%E6%8A%8Ats%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4%E6%88%96%E8%80%85%E6%B8%85%E7%A9%BA%E5%86%85%E5%AE%B9%EF%BC%9B%E5%B0%B1%E8%83%BD%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8Cjs%E6%96%87%E4%BB%B6%E4%BA%86%E3%80%82%201,Ts%20Js%20%E7%9A%84%E5%8C%BA%E5%88%AB&#34;&gt;微信开发工具ts和js文件冲突&lt;/a&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>“The emulator process for AVD has terminated”解决方法</title>
-      <link>https://kerwinglas.github.io/posts/the-emulator-process-for-avd-has-terminated-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kerwinglas.github.io/posts/the-emulator-process-for-avd-has-terminated-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
-      <description>问题描述 在Device Manager中打算lauch a emulator时失败，报错“The emulator process for AVD has terminated”。
-原因分析 AVD所在磁盘空间不足。
-The space depends on emulator type. Several are below from my setup (x86_64): Pixel_5_API_31 - 3.6GB, Nexus_7_API_28 - 2.4GB, Nexus_4_API_22 - 5.5GB, Nexus_5X_API_26 - 5.2GB, Nexus_5X_API_28 - 2.</description>
-      <content>&lt;ul&gt;
-&lt;li&gt;
-&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
-&lt;p&gt;在&lt;code&gt;Device Manager&lt;/code&gt;中打算lauch a emulator时失败，报错“The emulator process for AVD has terminated”。&lt;/p&gt;
-&lt;h2 id=&#34;原因分析&#34;&gt;原因分析&lt;/h2&gt;
-&lt;p&gt;AVD所在磁盘空间不足。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The space depends on emulator type. Several are below from my setup (x86_64): Pixel_5_API_31 - 3.6GB, Nexus_7_API_28 - 2.4GB, Nexus_4_API_22 - 5.5GB, Nexus_5X_API_26 - 5.2GB, Nexus_5X_API_28 - 2.7GB, Pixel_API_21 - 5.6GB&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;解决方案&#34;&gt;解决方案&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;更改AVD的默认路径。参考博客&lt;a href=&#34;https://blog.51cto.com/u_15127626/3296953&#34;&gt;Android 修改AVD路径&lt;/a&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;重启Android Studio&lt;/strong&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/67346232/android-emulator-issues-in-new-versions-the-emulator-process-has-terminated&#34;&gt;Android Emulator issues in new versions - The emulator process has terminated&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.51cto.com/u_15127626/3296953&#34;&gt;Android 修改AVD路径&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 </content>
     </item>
     

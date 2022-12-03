@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>微信小程序开发 | 数据绑定无法实现 :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="问题描述 在pages/wxml/index.wxml内有如下语句：
+&amp;lt;!--pages/wxml/index.wxml--&amp;gt; &amp;lt;text&amp;gt;time now: {{ time }} &amp;lt;/text&amp;gt; &amp;lt;text&amp;gt;{{ a==10? &amp;#34;var a = 10&amp;#34; : &amp;#34;var a != 10&amp;#34;}}&amp;lt;/text&amp;gt; 且在pages/wxml/index.js中有对应定义：
+data: { time: (new Date()).toString(), a: 10 }, 但始终无法实现数据绑定，即pages/wxml/index.js文件不起作用。
+原因分析 创建项目时使用了typescript来初始化项目，在ts文件和js文件同时存在的情况下，优先采用ts文件的声明，而忽略了js文件的存在。
+解决方案 删除文件index.ts，或使用ts文件实现对应声明。
+reference 微信开发工具ts和js文件冲突" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://kerwinglas.github.io/posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0/" />
+
+
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/green-local.scss">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="https://kerwinglas.github.io/img/theme-colors/green.png">
+  <link rel="apple-touch-icon" href="https://kerwinglas.github.io/img/theme-colors/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="微信小程序开发 | 数据绑定无法实现">
+<meta property="og:description" content="问题描述 在pages/wxml/index.wxml内有如下语句：
+&amp;lt;!--pages/wxml/index.wxml--&amp;gt; &amp;lt;text&amp;gt;time now: {{ time }} &amp;lt;/text&amp;gt; &amp;lt;text&amp;gt;{{ a==10? &amp;#34;var a = 10&amp;#34; : &amp;#34;var a != 10&amp;#34;}}&amp;lt;/text&amp;gt; 且在pages/wxml/index.js中有对应定义：
+data: { time: (new Date()).toString(), a: 10 }, 但始终无法实现数据绑定，即pages/wxml/index.js文件不起作用。
+原因分析 创建项目时使用了typescript来初始化项目，在ts文件和js文件同时存在的情况下，优先采用ts文件的声明，而忽略了js文件的存在。
+解决方案 删除文件index.ts，或使用ts文件实现对应声明。
+reference 微信开发工具ts和js文件冲突" />
+<meta property="og:url" content="https://kerwinglas.github.io/posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0/" />
+<meta property="og:site_name" content="Terminal" />
+
+  
+    <meta property="og:image" content="https://kerwinglas.github.io/img/favicon/green.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2022-12-03 22:03:29 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="green">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://kerwinglas.github.io/posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0/">微信小程序开发 | 数据绑定无法实现</a>
+  </h1>
+  <div class="post-meta">
+    
+      <time class="post-date">
+        2022-12-03 ::
+        
+      </time>
+    
+    
+      <span class="post-author">kerwinglas</span>
+    
+    
+      <span class="post-reading-time">:: 1 min read (36 words)</span>
+    
+  </div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="https://kerwinglas.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a>&nbsp;
+      
+      #<a href="https://kerwinglas.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>&nbsp;
+      
+      #<a href="https://kerwinglas.github.io/tags/bug/">bug</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="问题描述">问题描述<a href="#问题描述" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>在<code>pages/wxml/index.wxml</code>内有如下语句：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!--pages/wxml/index.wxml--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;text&gt;</span>time now: {{ time }} <span style="color:#f92672">&lt;/text&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;text&gt;</span>{{ a==10? &#34;var a = 10&#34; : &#34;var a != 10&#34;}}<span style="color:#f92672">&lt;/text&gt;</span>
+</span></span></code></pre></div><p>且在<code>pages/wxml/index.js</code>中有对应定义：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">time</span><span style="color:#f92672">:</span> (<span style="color:#66d9ef">new</span> Date()).<span style="color:#a6e22e">toString</span>(),
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span></code></pre></div><p>但始终无法实现数据绑定，即<code>pages/wxml/index.js</code>文件不起作用。</p>
+<h2 id="原因分析">原因分析<a href="#原因分析" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>创建项目时使用了typescript来初始化项目，在ts文件和js文件同时存在的情况下，优先采用ts文件的声明，而忽略了js文件的存在。</p>
+<h2 id="解决方案">解决方案<a href="#解决方案" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>删除文件<code>index.ts</code>，或使用ts文件实现对应声明。</p>
+<h2 id="reference">reference<a href="#reference" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><a href="https://blog.csdn.net/weixin_45807026/article/details/122423651#:~:text=%E5%A6%82%E6%9E%9C%E5%88%9B%E5%BB%BA%E4%BA%86%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E4%BA%86typescript%E6%9D%A5%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B9%E7%9B%AE%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9C%A8%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%96%B0%E5%BB%BA%E4%BA%86js%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%9D%EF%BC%8C%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E4%BC%9A%E5%85%88%E8%AF%BB%E5%8F%96ts%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%86%85%E5%AE%B9%EF%BC%8C%E9%99%A4%E9%9D%9Ets%E6%96%87%E4%BB%B6%E4%B8%AD%E6%B2%A1%E6%9C%89%E5%86%85%E5%AE%B9%E6%89%8D%E4%BC%9A%E5%8E%BB%E8%AF%BB%E5%8F%96js%E6%96%87%E4%BB%B6%E3%80%82%20%E6%89%80%E4%BB%A5%E5%8F%AA%E8%A6%81%E6%8A%8Ats%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4%E6%88%96%E8%80%85%E6%B8%85%E7%A9%BA%E5%86%85%E5%AE%B9%EF%BC%9B%E5%B0%B1%E8%83%BD%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8Cjs%E6%96%87%E4%BB%B6%E4%BA%86%E3%80%82%201,Ts%20Js%20%E7%9A%84%E5%8C%BA%E5%88%AB">微信开发工具ts和js文件冲突</a></p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://kerwinglas.github.io/posts/the-emulator-process-for-avd-has-terminated-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
+                <span class="button__text">“The emulator process for AVD has terminated”解决方法</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

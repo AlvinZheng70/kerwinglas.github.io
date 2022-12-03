@@ -143,6 +143,55 @@
     
       <article class="post on-list">
         <h1 class="post-title">
+          <a href="https://kerwinglas.github.io/posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0/">微信小程序开发 | 数据绑定无法实现</a>
+        </h1>
+
+        <div class="post-meta">
+          
+            <time class="post-date">
+              2022-12-03 ::
+            </time>
+          
+          
+            <span class="post-author">kerwinglas</span>
+          
+        </div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://kerwinglas.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/">软件开发</a>&nbsp;
+            
+            #<a href="https://kerwinglas.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">微信小程序</a>&nbsp;
+            
+            #<a href="https://kerwinglas.github.io/tags/bug/">bug</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            问题描述 在pages/wxml/index.wxml内有如下语句：
+&lt;!&ndash;pages/wxml/index.wxml&ndash;&gt; &lt;text&gt;time now: {{ time }} &lt;/text&gt; &lt;text&gt;{{ a==10? &quot;var a = 10&quot; : &quot;var a != 10&quot;}}&lt;/text&gt; 且在pages/wxml/index.js中有对应定义：
+data: { time: (new Date()).toString(), a: 10 }, 但始终无法实现数据绑定，即pages/wxml/index.js文件不起作用。
+原因分析 创建项目时使用了typescript来初始化项目，在ts文件和js文件同时存在的情况下，优先采用ts文件的声明，而忽略了js文件的存在。
+解决方案 删除文件index.ts，或使用ts文件实现对应声明。
+reference 微信开发工具ts和js文件冲突
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button" href="/posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0/">Read more →</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
           <a href="https://kerwinglas.github.io/posts/the-emulator-process-for-avd-has-terminated-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">“The emulator process for AVD has terminated”解决方法</a>
         </h1>
 
