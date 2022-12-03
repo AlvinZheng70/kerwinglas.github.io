@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Terminal</title>
+    <link>https://kerwinglas.github.io/tags/</link>
+    <description>Recent content in Tags on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kerwinglas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>android studio</title>
+      <link>https://kerwinglas.github.io/tags/android-studio/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kerwinglas.github.io/tags/android-studio/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>bugs</title>
+      <link>https://kerwinglas.github.io/tags/bugs/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kerwinglas.github.io/tags/bugs/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>安卓开发</title>
+      <link>https://kerwinglas.github.io/tags/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Sat, 03 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kerwinglas.github.io/tags/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>
