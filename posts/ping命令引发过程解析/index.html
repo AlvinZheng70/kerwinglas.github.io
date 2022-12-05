@@ -160,6 +160,7 @@
   <div class="post-content"><div>
         <h1 id="背景">背景<a href="#背景" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
 <p>过程使用的网络拓扑图如下。</p>
+<!-- raw HTML omitted -->
 <p>采取的操作是，在主机PC-PT PC9的终端输入指令<code>ping 192.168.1.3</code>，分析数据传递过程。</p>
 <blockquote>
 <p>ICMP协议是“Internet Control Message Protocol”（因特网控制消息协议）的缩写。它是TCP/IP协议族的一个子协议，用于在IP主机、路由器之间传递控制消息。
@@ -168,6 +169,26 @@ ping命令通常用来作为网络可用性的检查。ping命令可以对一个
 ping和ICMP的关系：ping命令发送数据使用的是ICMP协议。</p>
 </blockquote>
 <h1 id="过程解析">过程解析<a href="#过程解析" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="主机pc9生成icmp报文">主机PC9生成ICMP报文<a href="#主机pc9生成icmp报文" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li>Ping进程启动下一个ping请求。</li>
+<li>ping进程创建ICMP回显请求消息（ICMP Echo Request message）并将其发送至下一个进程。</li>
+<li>源IP地址未指定，因此设备将源IP地址设为端口的IP地址。</li>
+<li>目标IP地址既不在一个子网也不是广播地址。而主机默认网关已设置，因此设备将下一跳设为其默认网关。</li>
+<li>下一跳的IP地址（即路由器端口Fa0/0的IP地址）是单播地址，ARP进程在ARP表中寻找该表项。
+若在表中成功找到该表项，则ARP进程将帧的目的MAC地址设置为表中给出的地址（即路由器端口Fa0/0的MAC地址）。
+若未成功找到表项，则通过ARP协议获得。主机通过广播帧发送ARP请求包，在数据包内给出自己的IP地址和端口Fa0的MAC地址，以及目的IP地址（路由器端口Fa0/0的IP地址<code>192.168.0.3</code>，即默认网关）。路由器端口Fa0/0接收该广播帧，并向PC9发送ARP响应分组，给出自己的MAC地址<code>0060.5C59.2501</code>。</li>
+<li>设备将协议数据单元（PDU）封装至以太网帧中。</li>
+<li>端口Fa0发送该以太网帧。</li>
+</ul>
+<p>OSI模型如图所示。</p>
+<!-- raw HTML omitted -->
+<h2 id="交换机switch0接收该帧并转发">交换机Switch0接收该帧并转发<a href="#交换机switch0接收该帧并转发" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>交换机Switch0接收该帧并转发
+注：交换机有一个<strong>交换表</strong>，存在自学习机制。当它收到该帧，会在交换表中添加记录，该记录将PC9端口Fa0的MAC地址映射至交换机接收到该帧的端口。假设该交换表无Router2端口Fa0/0的MAC地址的映射信息，则向其余各个端口进行转发。</p>
+<h2 id="路由器端口fa00接收该帧">路由器端口Fa0/0接收该帧<a href="#路由器端口fa00接收该帧" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>其OSI模型如下所示。</p>
+<!-- raw HTML omitted -->
 
       </div></div>
 
