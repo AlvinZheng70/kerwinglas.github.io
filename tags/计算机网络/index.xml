@@ -22,7 +22,7 @@ ICMP协议是“Internet Control Message Protocol”（因特网控制消息协�
       <content>&lt;h1 id=&#34;背景&#34;&gt;背景&lt;/h1&gt;
 &lt;p&gt;过程使用的网络拓扑图如下。&lt;/p&gt;
 
-  &lt;img src=&#34;https://kerwinglas.github.io/img/ffdb7406_8277321.png&#34;  alt=&#34;网络拓扑图&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;  /&gt;
+  &lt;img src=&#34;https://kerwinglas.github.io/img/ffdb7406_8277321.png&#34;  alt=&#34;网络拓扑图&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;zoom: 33%;&#34;  /&gt;
 
 
 &lt;p&gt;采取的操作是，在主机PC-PT PC9的终端输入指令&lt;code&gt;ping 192.168.1.3&lt;/code&gt;，分析数据传递过程。&lt;/p&gt;
