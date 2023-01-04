@@ -2,21 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kerwinglas.github.io/posts/ping%E5%91%BD%E4%BB%A4%E5%BC%95%E5%8F%91%E8%BF%87%E7%A8%8B%E8%A7%A3%E6%9E%90/</loc>
-    <lastmod>2022-12-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kerwinglas.github.io/posts/</loc>
-    <lastmod>2022-12-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kerwinglas.github.io/tags/</loc>
-    <lastmod>2022-12-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kerwinglas.github.io/</loc>
-    <lastmod>2022-12-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kerwinglas.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2022-12-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://kerwinglas.github.io/posts/the-emulator-process-for-avd-has-terminated-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2022-12-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -27,6 +12,15 @@
     <lastmod>2022-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kerwinglas.github.io/tags/bugs/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kerwinglas.github.io/posts/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kerwinglas.github.io/tags/</loc>
+    <lastmod>2022-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kerwinglas.github.io/</loc>
     <lastmod>2022-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kerwinglas.github.io/tags/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91/</loc>
