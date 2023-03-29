@@ -29,8 +29,8 @@
 
 
 
-  <link rel="shortcut icon" href="https://kerwinglas.github.io/img/theme-colors/green.png">
-  <link rel="apple-touch-icon" href="https://kerwinglas.github.io/img/theme-colors/green.png">
+  <link rel="shortcut icon" href="https://kerwinglas.github.io/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="https://kerwinglas.github.io/img/theme-colors/orange.png">
 
 
 
@@ -46,7 +46,7 @@
 <meta property="og:site_name" content="Terminal" />
 
   
-    <meta property="og:image" content="https://kerwinglas.github.io/img/favicon/green.png">
+    <meta property="og:image" content="https://kerwinglas.github.io/img/favicon/orange.png">
   
 
 <meta property="og:image:width" content="1200">
@@ -67,7 +67,7 @@
 
 
 </head>
-<body class="green">
+<body class="orange">
 
 
 <div class="container headings--one-size">
@@ -166,9 +166,6 @@
             问题描述 在pages/wxml/index.wxml内有如下语句：
 &lt;!&ndash;pages/wxml/index.wxml&ndash;&gt; &lt;text&gt;time now: {{ time }} &lt;/text&gt; &lt;text&gt;{{ a==10? &quot;var a = 10&quot; : &quot;var a != 10&quot;}}&lt;/text&gt; 且在pages/wxml/index.js中有对应定义：
 data: { time: (new Date()).toString(), a: 10 }, 但始终无法实现数据绑定，即pages/wxml/index.js文件不起作用。
-原因分析 创建项目时使用了typescript来初始化项目，在ts文件和js文件同时存在的情况下，优先采用ts文件的声明，而忽略了js文件的存在。
-解决方案 删除文件index.ts，或使用ts文件实现对应声明。
-reference 微信开发工具ts和js文件冲突
           
         </div>
 

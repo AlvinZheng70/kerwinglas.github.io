@@ -15,7 +15,7 @@
       <guid>https://kerwinglas.github.io/posts/the-emulator-process-for-avd-has-terminated-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</guid>
       <description>问题描述 在Device Manager中打算lauch a emulator时失败，报错“The emulator process for AVD has terminated”。
 原因分析 AVD所在磁盘空间不足。
-The space depends on emulator type. Several are below from my setup (x86_64): Pixel_5_API_31 - 3.6GB, Nexus_7_API_28 - 2.4GB, Nexus_4_API_22 - 5.5GB, Nexus_5X_API_26 - 5.2GB, Nexus_5X_API_28 - 2.</description>
+The space depends on emulator type. Several are below from my setup (x86_64): Pixel_5_API_31 - 3.6GB, Nexus_7_API_28 - 2.</description>
       <content>&lt;ul&gt;
 &lt;li&gt;
 &lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;

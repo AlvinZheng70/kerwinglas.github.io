@@ -15,10 +15,7 @@
       <guid>https://kerwinglas.github.io/posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E6%97%A0%E6%B3%95%E5%AE%9E%E7%8E%B0/</guid>
       <description>问题描述 在pages/wxml/index.wxml内有如下语句：
 &amp;lt;!--pages/wxml/index.wxml--&amp;gt; &amp;lt;text&amp;gt;time now: {{ time }} &amp;lt;/text&amp;gt; &amp;lt;text&amp;gt;{{ a==10? &amp;#34;var a = 10&amp;#34; : &amp;#34;var a != 10&amp;#34;}}&amp;lt;/text&amp;gt; 且在pages/wxml/index.js中有对应定义：
-data: { time: (new Date()).toString(), a: 10 }, 但始终无法实现数据绑定，即pages/wxml/index.js文件不起作用。
-原因分析 创建项目时使用了typescript来初始化项目，在ts文件和js文件同时存在的情况下，优先采用ts文件的声明，而忽略了js文件的存在。
-解决方案 删除文件index.ts，或使用ts文件实现对应声明。
-reference 微信开发工具ts和js文件冲突</description>
+data: { time: (new Date()).toString(), a: 10 }, 但始终无法实现数据绑定，即pages/wxml/index.js文件不起作用。</description>
       <content>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
 &lt;p&gt;在&lt;code&gt;pages/wxml/index.wxml&lt;/code&gt;内有如下语句：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--pages/wxml/index.wxml--&amp;gt;&lt;/span&gt;
