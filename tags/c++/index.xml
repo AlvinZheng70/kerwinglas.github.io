@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kerwinglas.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2023-03-29 算法</title>
+      <link>https://kerwinglas.github.io/posts/2023_03_29-%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kerwinglas.github.io/posts/2023_03_29-%E7%AE%97%E6%B3%95/</guid>
+      <description>1 Leetcode217 Contains Duplicate Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+Example :</description>
+      <content>&lt;h1 id=&#34;1-leetcode217-contains-duplicate&#34;&gt;1 Leetcode217 Contains Duplicate&lt;/h1&gt;
+&lt;p&gt;Given an integer array &lt;code&gt;nums&lt;/code&gt;, return &lt;code&gt;true&lt;/code&gt; if any value appears &lt;strong&gt;at least twice&lt;/strong&gt; in the array, and return &lt;code&gt;false&lt;/code&gt; if every element is distinct.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example :&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Input: nums = [1,2,3,1]
+Output: true
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;这道题比较简单，最容易想到的思路是排序，即先将数据进行排序，再遍历一遍数组查看是否有重复元素。时间复杂度是O(nlogn)，时间性能较差。还有一种思路是使用数据结构哈希表，可以利用STL库中的unordered_set，时间复杂度降为O(n)。这个数据结构，从逻辑上看可以简单看作一个不容纳重复元素的集合，从实现上看是利用hash映射存值，从而加快插入和查找。具体思路是遍历一遍数组，逐个加入元素至集合中，加入前判断其是否已经存在于集合中。注意unordered_set的具体用法。&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>STL | 使用指南整理</title>
       <link>https://kerwinglas.github.io/posts/stl-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E6%95%B4%E7%90%86/</link>
       <pubDate>Wed, 29 Mar 2023 00:00:00 +0000</pubDate>
