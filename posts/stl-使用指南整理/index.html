@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>STL | 使用指南整理 :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="[TOC]
+STRING STL中的string是一个标准库类，用于表示和处理字符串。以下是STL中string的常用用法：
+创建和初始化字符串 可以使用以下方法创建和初始化字符串：
+string str1; // 创建一个空字符串 string str2(&amp;#34;hello&amp;#34;); // 创建一个字符串，并将其初始化为&amp;#34;hello&amp;#34; string str3 = &amp;#34;world&amp;#34;; // 创建一个字符串，并将其初始化为&amp;#34;world&amp;#34; string str4(5, &amp;#39;a&amp;#39;); // 创建一个包含5个&amp;#39;a&amp;#39;字符的字符串 访问字符串中的字符 可以使用以下方法访问字符串中的字符：
+string str = &amp;#34;hello&amp;#34;; char c1 = str[0]; // 获取字符串的第一个字符&amp;#39;h&amp;#39; char c2 = str." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://kerwinglas.github.io/posts/stl-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E6%95%B4%E7%90%86/" />
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/style.css">
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="https://kerwinglas.github.io/img/theme-colors/orange.png">
+  <link rel="apple-touch-icon" href="https://kerwinglas.github.io/img/theme-colors/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="STL | 使用指南整理">
+<meta property="og:description" content="[TOC]
+STRING STL中的string是一个标准库类，用于表示和处理字符串。以下是STL中string的常用用法：
+创建和初始化字符串 可以使用以下方法创建和初始化字符串：
+string str1; // 创建一个空字符串 string str2(&amp;#34;hello&amp;#34;); // 创建一个字符串，并将其初始化为&amp;#34;hello&amp;#34; string str3 = &amp;#34;world&amp;#34;; // 创建一个字符串，并将其初始化为&amp;#34;world&amp;#34; string str4(5, &amp;#39;a&amp;#39;); // 创建一个包含5个&amp;#39;a&amp;#39;字符的字符串 访问字符串中的字符 可以使用以下方法访问字符串中的字符：
+string str = &amp;#34;hello&amp;#34;; char c1 = str[0]; // 获取字符串的第一个字符&amp;#39;h&amp;#39; char c2 = str." />
+<meta property="og:url" content="https://kerwinglas.github.io/posts/stl-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E6%95%B4%E7%90%86/" />
+<meta property="og:site_name" content="Terminal" />
+
+  
+    <meta property="og:image" content="https://kerwinglas.github.io/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2023-03-29 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://kerwinglas.github.io/posts/stl-%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E6%95%B4%E7%90%86/">STL | 使用指南整理</a>
+  </h1>
+  <div class="post-meta">
+    
+      <time class="post-date">
+        2023-03-29 ::
+        
+      </time>
+    
+    
+      <span class="post-author">kerwinglas</span>
+    
+    
+  </div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="https://kerwinglas.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
+      
+      #<a href="https://kerwinglas.github.io/tags/%E7%AE%97%E6%B3%95/">算法</a>&nbsp;
+      
+      #<a href="https://kerwinglas.github.io/tags/stl/">STL</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p>[TOC]</p>
+<h2 id="string">STRING<a href="#string" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>STL中的string是一个标准库类，用于表示和处理字符串。以下是STL中string的常用用法：</p>
+<h3 id="创建和初始化字符串">创建和初始化字符串<a href="#创建和初始化字符串" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以使用以下方法创建和初始化字符串：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>string str1;           <span style="color:#75715e">// 创建一个空字符串
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>string <span style="color:#a6e22e">str2</span>(<span style="color:#e6db74">&#34;hello&#34;</span>);  <span style="color:#75715e">// 创建一个字符串，并将其初始化为&#34;hello&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>string str3 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;world&#34;</span>; <span style="color:#75715e">// 创建一个字符串，并将其初始化为&#34;world&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>string <span style="color:#a6e22e">str4</span>(<span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#39;a&#39;</span>);   <span style="color:#75715e">// 创建一个包含5个&#39;a&#39;字符的字符串
+</span></span></span></code></pre></div><h3 id="访问字符串中的字符">访问字符串中的字符<a href="#访问字符串中的字符" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以使用以下方法访问字符串中的字符：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>string str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">char</span> c1 <span style="color:#f92672">=</span> str[<span style="color:#ae81ff">0</span>];             <span style="color:#75715e">// 获取字符串的第一个字符&#39;h&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">char</span> c2 <span style="color:#f92672">=</span> str.at(<span style="color:#ae81ff">1</span>);          <span style="color:#75715e">// 获取字符串的第二个字符&#39;e&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">char</span> c3 <span style="color:#f92672">=</span> str.front();        <span style="color:#75715e">// 获取字符串的第一个字符&#39;h&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">char</span> c4 <span style="color:#f92672">=</span> str.back();         <span style="color:#75715e">// 获取字符串的最后一个字符&#39;o&#39;
+</span></span></span></code></pre></div><h3 id="操作字符串">操作字符串<a href="#操作字符串" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以使用以下方法对字符串进行操作：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>luaCopy codestring str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span>;
+</span></span><span style="display:flex;"><span>string str2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;world&#34;</span>;
+</span></span><span style="display:flex;"><span>string str3 <span style="color:#f92672">=</span> str1 <span style="color:#f92672">+</span> str2;  <span style="color:#75715e">// 将两个字符串连接起来，结果为&#34;helloworld&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>str1.append(str2);          <span style="color:#75715e">// 将str2添加到str1的末尾，结果为&#34;helloworld&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>str1.erase(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>);           <span style="color:#75715e">// 删除str1中从位置0开始的1个字符，结果为&#34;ello&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>str1.insert(<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;i&#34;</span>);        <span style="color:#75715e">// 在str1的第2个位置插入字符&#34;i&#34;，结果为&#34;hello&#34;
+</span></span></span></code></pre></div><h3 id="获取字符串的长度">获取字符串的长度<a href="#获取字符串的长度" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以使用以下方法获取字符串的长度：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>string str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> len <span style="color:#f92672">=</span> str.length();   <span style="color:#75715e">// 获取字符串的长度，结果为5
+</span></span></span></code></pre></div><h3 id="比较字符串">比较字符串<a href="#比较字符串" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以使用以下方法比较两个字符串：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>string str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span>;
+</span></span><span style="display:flex;"><span>string str2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;world&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (str1 <span style="color:#f92672">==</span> str2) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 两个字符串相等
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (str1 <span style="color:#f92672">&lt;</span> str2) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// str1小于str2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (str1.compare(str2) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 两个字符串相等
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h3 id="查找字符串">查找字符串<a href="#查找字符串" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以使用以下方法在字符串中查找子字符串：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>string str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world&#34;</span>;
+</span></span><span style="display:flex;"><span>size_t pos <span style="color:#f92672">=</span> str.find(<span style="color:#e6db74">&#34;world&#34;</span>);    <span style="color:#75715e">// 在str中查找&#34;world&#34;，返回其起始位置9
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (pos <span style="color:#f92672">!=</span> string<span style="color:#f92672">::</span>npos) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 找到了&#34;world&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h3 id="转换字符串">转换字符串<a href="#转换字符串" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以使用以下方法将字符串转换为其他类型的值：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>string str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;123&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> num <span style="color:#f92672">=</span> stoi(str);            <span style="color:#75715e">// 将字符串转换为整数，结果为123
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">double</span> d <span style="color:#f92672">=</span> stod(<span style="color:#e6db74">&#34;3.14&#34;</span>);         <span style="color:#75715e">// 将字符串转换为浮点数，结果为3.14
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">long</span> l <span style="color:#f92672">=</span> stol(<span style="color:#e6db74">&#34;123456&#34;</span>);         <span style="color:#75715e">// 将字符串转换为长整数，结果为123456
+</span></span></span></code></pre></div><p>这些是STL中string的一些常用用法。需要注意的是，string类是可变的，也就是说，可以通过各种操作来改变字符串的内容。</p>
+<h2 id="vector">VECTOR<a href="#vector" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><code>vector</code> 是 STL 中的一个容器，用于存储一组动态分配的对象，具有可变大小和快速随机访问元素的能力。下面是 <code>vector</code> 的详细用法。</p>
+<h3 id="头文件和命名空间">头文件和命名空间<a href="#头文件和命名空间" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>使用 <code>vector</code> 需要包含 <code>&lt;vector&gt;</code> 头文件，并使用 <code>std</code> 命名空间。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span></code></pre></div><h3 id="定义-vector">定义 vector<a href="#定义-vector" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以通过以下两种方式定义一个 <code>vector</code>：</p>
+<h4 id="使用默认构造函数">使用默认构造函数<a href="#使用默认构造函数" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec; <span style="color:#75715e">// 定义一个空的 int 类型的 vector
+</span></span></span></code></pre></div><h4 id="使用带有初始值的构造函数">使用带有初始值的构造函数<a href="#使用带有初始值的构造函数" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec1(<span style="color:#ae81ff">10</span>);      <span style="color:#75715e">// 定义一个包含 10 个 int 类型的元素的 vector，初始值为 0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec2(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>);   <span style="color:#75715e">// 定义一个包含 10 个 int 类型的元素的 vector，初始值为 5
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec3 <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>}; <span style="color:#75715e">// 定义一个包含 2 个 int 类型的元素的 vector，初始值为 1 和 2
+</span></span></span></code></pre></div><h3 id="插入元素">插入元素<a href="#插入元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以通过以下几种方式向 <code>vector</code> 中插入元素：</p>
+<h4 id="使用-push_back-函数在末尾插入元素">使用 <code>push_back()</code> 函数在末尾插入元素<a href="#使用-push_back-函数在末尾插入元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec;
+</span></span><span style="display:flex;"><span>vec.push_back(<span style="color:#ae81ff">1</span>); <span style="color:#75715e">// 在末尾插入元素 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>vec.push_back(<span style="color:#ae81ff">2</span>); <span style="color:#75715e">// 在末尾插入元素 2
+</span></span></span></code></pre></div><h4 id="使用-insert-函数插入元素">使用 <code>insert()</code> 函数插入元素<a href="#使用-insert-函数插入元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>};
+</span></span><span style="display:flex;"><span>vec.insert(vec.begin() <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>); <span style="color:#75715e">// 在第二个位置插入元素 4
+</span></span></span></code></pre></div><h4 id="使用-emplace_back-函数插入元素">使用 <code>emplace_back()</code> 函数插入元素<a href="#使用-emplace_back-函数插入元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span>pair<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span>, string<span style="color:#f92672">&gt;&gt;</span> vec;
+</span></span><span style="display:flex;"><span>vec.emplace_back(<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;a&#34;</span>); <span style="color:#75715e">// 在末尾插入一个 pair&lt;int, string&gt; 类型的元素
+</span></span></span></code></pre></div><h3 id="访问元素">访问元素<a href="#访问元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以通过下标或迭代器来访问 <code>vector</code> 中的元素。</p>
+<h4 id="使用下标访问元素">使用下标访问元素<a href="#使用下标访问元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>};
+</span></span><span style="display:flex;"><span>cout <span style="color:#f92672">&lt;&lt;</span> vec[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&lt;&lt;</span> endl; <span style="color:#75715e">// 输出第一个元素
+</span></span></span></code></pre></div><h4 id="使用迭代器访问元素">使用迭代器访问元素<a href="#使用迭代器访问元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">auto</span> it <span style="color:#f92672">=</span> vec.begin(); <span style="color:#75715e">// 获取迭代器指向第一个元素
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#f92672">*</span>it <span style="color:#f92672">&lt;&lt;</span> endl;   <span style="color:#75715e">// 输出第一个元素
+</span></span></span></code></pre></div><h3 id="删除元素">删除元素<a href="#删除元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>可以通过以下几种方式从 <code>vector</code> 中删除元素：</p>
+<h4 id="使用-pop_back-函数删除末尾元素">使用 <code>pop_back()</code> 函数删除末尾元素<a href="#使用-pop_back-函数删除末尾元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>};
+</span></span><span style="display:flex;"><span>vec.pop_back(); <span style="color:#75715e">// 删除末尾元素
+</span></span></span></code></pre></div><h4 id="使用-erase-函数删除元素">使用 <code>erase()</code> 函数删除元素<a href="#使用-erase-函数删除元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> vec <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>};
+</span></span><span style="display:flex;"><span>vec.erase(vec.begin() <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// 删除第二个元素
+</span></span></span></code></pre></div><h2 id="unordered_set">unordered_set<a href="#unordered_set" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>unordered_set是C++ STL中的一个容器，用于存储不重复的元素。与其他集合容器不同的是，unordered_set的元素没有顺序限制，因此它的插入和查找操作具有常数级别的时间复杂度。</p>
+<p>以下是unordered_set的详细使用说明：</p>
+<h3 id="头文件">头文件<a href="#头文件" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>使用unordered_set需要包含头文件&lt;unordered_set&gt;。</p>
+<h3 id="定义">定义<a href="#定义" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>unordered_set的定义方式与其他STL容器类似，可以使用下面的语法：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;unordered_set&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>unordered_set<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> mySet;
+</span></span></code></pre></div><p>其中，unordered_set<!-- raw HTML omitted -->表示存储整型元素的unordered_set，mySet是unordered_set对象的名称。</p>
+<h3 id="插入元素-1">插入元素<a href="#插入元素-1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>unordered_set提供了insert()函数用于插入元素，示例代码如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>mySet.insert(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>mySet.insert(<span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>mySet.insert(<span style="color:#ae81ff">3</span>);
+</span></span></code></pre></div><p>上述代码插入了三个整型元素1、2、3。</p>
+<h3 id="删除元素-1">删除元素<a href="#删除元素-1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>unordered_set提供了erase()函数用于删除元素，示例代码如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span>mySet.erase(<span style="color:#ae81ff">2</span>);
+</span></span></code></pre></div><p>上述代码删除了元素2。</p>
+<h3 id="查找元素">查找元素<a href="#查找元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>unordered_set提供了find()函数用于查找元素，示例代码如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (mySet.find(<span style="color:#ae81ff">1</span>) <span style="color:#f92672">!=</span> mySet.end()) {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#e6db74">&#34;Found!&#34;</span> <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>上述代码查找元素1，如果找到了就输出&quot;Found!&quot;。</p>
+<h3 id="遍历元素">遍历元素<a href="#遍历元素" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>unordered_set的元素没有顺序限制，因此不能使用下标操作符[]来访问元素。可以使用迭代器来遍历元素，示例代码如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c++" data-lang="c++"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">auto</span> it <span style="color:#f92672">=</span> mySet.begin(); it <span style="color:#f92672">!=</span> mySet.end(); it<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#f92672">*</span>it <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>上述代码遍历unordered_set中的所有元素，并输出它们的值。</p>
+<h3 id="其他操作">其他操作<a href="#其他操作" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>unordered_set还提供了一些其他操作，例如：</p>
+<ul>
+<li>size()：返回unordered_set中元素的个数。</li>
+<li>clear()：清空unordered_set中的所有元素。</li>
+<li>empty()：判断unordered_set是否为空。</li>
+<li>emplace()：以构造函数参数的方式插入元素，效率比 insert 方法高。</li>
+</ul>
+<p>以上就是unordered_set的详细使用说明。需要注意的是，unordered_set是C++11引入的新特性，因此在编译时需要使用支持C++11的编译器。</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://kerwinglas.github.io/posts/the-emulator-process-for-avd-has-terminated-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
+                <span class="button__text">“The emulator process for AVD has terminated”解决方法</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
